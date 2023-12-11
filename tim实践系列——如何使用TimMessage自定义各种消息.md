@@ -91,6 +91,7 @@ tim客户端为消息异步触发机制，执行客户端方法后，无需等�
 tim的各个客户端都定义了MessageHandler方法或接口，通过实现MessageHandler(TimMessage)来处理服务传递过来的TimMessage对象。
 
 以下是java 客户端实现处理TimMessage的demo程序片段：
+
     tc.MessageHandler((TimMessage tm) -> {
                 if (tm.msType == 1) { //系统信息
                     Log.debug("this is system message >>", "body>>>", new String(tm.getBody()));
