@@ -1,4 +1,4 @@
-> tim 定义了TimMessage，TimPrecence，TimStream三种数据对象传递数据。其中支持持久化的对象为TimMessage，所以，一般用于用户之间的通信信息，系统信息，此外，TimMessage还支持部分tim的业务信息，如，加好友，入群的信息通知，与部分流数据传递。
+> tim 定义了TimMessage，TimPresence，TimStream三种数据对象传递数据。其中支持持久化的对象为TimMessage，所以，一般用于用户之间的通信信息，系统信息，此外，TimMessage还支持部分tim的业务信息，如，加好友，入群的信息通知，与部分流数据传递。
 
 #### TimMessage的字段：
 
