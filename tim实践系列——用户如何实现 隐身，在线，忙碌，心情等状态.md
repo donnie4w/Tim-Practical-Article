@@ -65,9 +65,9 @@ TimPresence的各个属性字段都由开发者自定义，使用timPrecence没�
     final static String STATUS_EMOTION_SUNSHINE = "☀️☀️☀️";   
 
     // 向账号10001发送字节的状态
-     tc.PresenceToUser("10001",SHOW_CHAT,STATUS_EMOTION_SUNSHINE,SUBSTATUS_REQ, null, null); 
+     tc.PresenceToUser("10001",SHOW_CHAT,STATUS_EMOTION_SUNSHINE,SUBSTATUS_REQ, null, null);
+	 
     //向所有好友广播个人状态并订阅对方状态
-
      tc.BroadPresence(SUBSTATUS_REQ,SHOW_CHAT,STATUS_EMOTION_SUNSHINE);
 注意： SHOW_AWAY = 2;    这里订阅的离线与offline为true的离线是不同的。
 
