@@ -77,7 +77,7 @@ timPrecence的offline为true是，是tim服务器发送的，表示账号与服�
 
 当用户掉线时，tim服务器会给她的好友发送一条TimPresence信息，改信息通过实现 客户端 presenceHandler来处理：
 
-###### 如 webtim：
+###### 如 webtim：https://tim.tlnet.top
 
 
         //状态消息
