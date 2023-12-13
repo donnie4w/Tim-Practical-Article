@@ -28,7 +28,8 @@ TimPresence的各个属性字段都由开发者自定义，使用timPrecence没�
 * 第一个对应TimPresence的字段subStatus   8位整型
 * 第二个对应TimPresence的字段show          16位整型
 * 第三个对应TimPresence的字段status            字符串
-这样就足以传递用户的状态及行为。
+
+这三个字段足以传递用户的状态及行为。
 
 ###### 如在[webtim项目](https://tim.tlnet.top)中
 
@@ -63,13 +64,11 @@ TimPresence的各个属性字段都由开发者自定义，使用timPrecence没�
     final static String STATUS_EMOTION_SAD = "I'm down";   
     final static String STATUS_EMOTION_SUNSHINE = "☀️☀️☀️";   
 
-###### 向账号10001发送字节的状态
+    // 向账号10001发送字节的状态
+     tc.PresenceToUser("10001",SHOW_CHAT,STATUS_EMOTION_SUNSHINE,SUBSTATUS_REQ, null, null); 
+    //向所有好友广播个人状态并订阅对方状态
 
-tc.PresenceToUser("10001",SHOW_CHAT,STATUS_EMOTION_SUNSHINE,SUBSTATUS_REQ, null, null); 
-
-###### 向所有好友广播个人状态并订阅对方状态
-
-tc.BroadPresence(SUBSTATUS_REQ,SHOW_CHAT,STATUS_EMOTION_SUNSHINE);
+     tc.BroadPresence(SUBSTATUS_REQ,SHOW_CHAT,STATUS_EMOTION_SUNSHINE);
 注意： SHOW_AWAY = 2;    这里订阅的离线与offline为true的离线是不同的。
 
 SHOW_AWAY = 2;   是开发者自定义的离线，可以理解为隐身，账号实际还是在线的，可以对标QQ的隐身功能
