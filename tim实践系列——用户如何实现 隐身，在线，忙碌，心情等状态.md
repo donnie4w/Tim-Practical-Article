@@ -9,6 +9,7 @@ TimPresence的各个属性字段都由开发者自定义，使用timPrecence没�
 如：定义TimPresence中show的字段：
 
 java示例
+
     final static short SHOW_CHAT = 1;   //聊天中
     final static short SHOW_AWAY = 2;   //离线
     final static short SHOW_XA = 3;     //走开
@@ -47,6 +48,7 @@ PresenceToList  发送给多个特定账户
 
 
 以下时java使用TimPresence的示例：
+
     final static byte SUBSTATUS_REQ = 1;  //订阅状态
     final static byte SUBSTATUS_ACK = 2;  //回复订阅状态
     final static short SHOW_CHAT = 1;   //聊天中
