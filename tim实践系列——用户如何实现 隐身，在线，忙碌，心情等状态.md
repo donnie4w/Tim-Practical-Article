@@ -8,7 +8,7 @@ TimPresence的各个属性字段都由开发者自定义，使用timPrecence没�
 
 如：定义TimPresence中show的字段：
 
-java示例
+###### java示例
 
     final static short SHOW_CHAT = 1;   //聊天中
     final static short SHOW_AWAY = 2;   //离线
@@ -30,20 +30,23 @@ java示例
 * 第三个对应TimPresence的字段status            字符串
 这样就足以传递用户的状态及行为。
 
-如在[webtim项目](https://tim.tlnet.top)中
+###### 如在[webtim项目](https://tim.tlnet.top)中
+
 ![](https://tlnet.top/f/1702439298_18608.jpg)
-用户上线时，调用   tc.BroadPresence(1,0,“😄”);
 
-其他用户收到数据：
+**用户上线时，调用   tc.BroadPresence(1,0,“😄”);**
 
-subStatus=1表示他要订阅我的状态，所以我记录他的状态，并回复我的状态给他 tc.PresenceToUser("Ximkeig13y", 0, "😄", 1, null, null))
-show=0 这里没有定义它作用
-status=😄 显示在用户状态上
+**其他用户收到数据：**
+
+1. subStatus=1表示他要订阅我的状态，所以我记录他的状态，并回复我的状态给他 tc.PresenceToUser("Ximkeig13y", 0, "😄", 1, null, null))
+2. show=0 这里没有定义它作用
+3. status=😄 显示在用户状态上
+
 这样完成了webtim的用户状态信息传递。
 
-PresenceToUser 发送特定账户
-PresenceToList  发送给多个特定账户
-说明：webtim源码：https://github.com/donnie4w/webtim
+- PresenceToUser 发送特定账户
+- PresenceToList  发送给多个特定账户
+- 说明：webtim源码：https://github.com/donnie4w/webtim
 
 
 
@@ -60,10 +63,12 @@ PresenceToList  发送给多个特定账户
     final static String STATUS_EMOTION_SAD = "I'm down";   
     final static String STATUS_EMOTION_SUNSHINE = "☀️☀️☀️";   
 
-//向账号10001发送字节的状态
+###### 向账号10001发送字节的状态
+
 tc.PresenceToUser("10001",SHOW_CHAT,STATUS_EMOTION_SUNSHINE,SUBSTATUS_REQ, null, null); 
 
-//向所有好友广播个人状态并订阅对方状态
+###### 向所有好友广播个人状态并订阅对方状态
+
 tc.BroadPresence(SUBSTATUS_REQ,SHOW_CHAT,STATUS_EMOTION_SUNSHINE);
 注意： SHOW_AWAY = 2;    这里订阅的离线与offline为true的离线是不同的。
 
@@ -73,8 +78,7 @@ timPrecence的offline为true是，是tim服务器发送的，表示账号与服�
 
 当用户掉线时，tim服务器会给她的好友发送一条TimPresence信息，改信息通过实现 客户端 presenceHandler来处理：
 
-如 webtim：
-
+###### 如 webtim：
 
 
         //状态消息
