@@ -25,7 +25,6 @@ tim客户端 通过TimAuth协议对象登录tim服务器，TimAuth的字段说�
 * resource   用来传递终端设备的信息，如  huawei50
 * termtyp    用来标识终端类型，tim服务器主要通过该字段限制同账号同类型终端
 * extend    扩展字段
-* termtyp 说明
 
 ## termtyp 说明
 
