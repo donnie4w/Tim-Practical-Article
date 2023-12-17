@@ -1,5 +1,5 @@
 > 部分im应用允许同一个账号同时多终端登录，如微信，QQ等应用，允许同账号在移动端与PC端同时登录。tim服务器支持通过配置，灵活设置并扩展该功能
-
+> 来源[《tim实践系列》](https://github.com/donnie4w/Tim-Practical-Article)
 
 ### Tim登录
 tim客户端 通过TimAuth协议对象登录tim服务器，TimAuth的字段说明：

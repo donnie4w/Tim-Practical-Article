@@ -1,4 +1,5 @@
-> tim通过TimPresence传递在线信息，该对象不会被持久化，只有在线用户可以收到。一般可以用于用户在线状态的传递，《[tim实践系列——如何使用TimPresence自定义各种用户状态》](https://tlnet.top/article/22425172) 介绍了timPresence的各个属性作用，本文介绍一般用户状态使用TimPresence的示例
+> tim通过TimPresence传递在线信息，该对象不会被持久化，只有在线用户可以收到。一般可以用于用户在线状态的传递，[tim实践系列——如何使用TimPresence自定义各种用户状态](https://github.com/donnie4w/Tim-Practical-Article/blob/main/tim%E5%AE%9E%E8%B7%B5%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8TimPresence%E8%87%AA%E5%AE%9A%E4%B9%89%E5%90%84%E7%A7%8D%E7%94%A8%E6%88%B7%E7%8A%B6%E6%80%81.md "tim实践系列——如何使用TimPresence自定义各种用户状态") 介绍了timPresence的各个属性作用，本文介绍一般用户状态使用TimPresence的示例
+> 来源[《tim实践系列》](https://github.com/donnie4w/Tim-Practical-Article)
 
 部分IM软件会有显示用户在线状态的功能，如QQ，Skype等
 

@@ -1,5 +1,5 @@
 > 前言:tim是去中心化的分布式im引擎。 传输协议是tim能架设支持百亿级别在线用户量的重要因素，tim的协议在协议包体积与协议序列化反序列化方面，都有非常优秀的表现。
-> [来源《tim实践系列——tim协议与其他格式协议的比较》](https://tlnet.top/article/22425142)
+> 来源[《tim实践系列》](https://github.com/donnie4w/Tim-Practical-Article)
 
 tim协议支持两种格式，thrift 压缩格式与json格式；主要支持的协议使用gothrift进行序列化与反序列化.
 

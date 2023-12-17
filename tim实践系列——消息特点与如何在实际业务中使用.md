@@ -1,4 +1,5 @@
-> TimMessage是tim最主要的数据结构，所以它的功能比较复杂，也比较多，主要体现在TimMessage时可以被持久化的，并且可以通过发送者或接收者发起相应的指令进行删除，TimMessage包含多个属性字段，多种数据类型属性，可以传递不同类型的数据。在《[tim实践系列——如何使用TimMessage自定义各种消息](https://tlnet.top/article/22425173)》中，详细介绍了TimMessage的数据结构，本文主要示例它的业务使用
+> TimMessage是tim最主要的数据结构，所以它的功能比较复杂，也比较多，主要体现在TimMessage时可以被持久化的，并且可以通过发送者或接收者发起相应的指令进行删除，TimMessage包含多个属性字段，多种数据类型属性，可以传递不同类型的数据。在《[tim实践系列——如何使用TimMessage自定义各种消息](https://github.com/donnie4w/Tim-Practical-Article/blob/main/tim%E5%AE%9E%E8%B7%B5%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8TimMessage%E8%87%AA%E5%AE%9A%E4%B9%89%E5%90%84%E7%A7%8D%E6%B6%88%E6%81%AF.md "tim实践系列——如何使用TimMessage自定义各种消息")》中，详细介绍了TimMessage的数据结构，本文主要示例它的业务使用
+> 来源[《tim实践系列》](https://github.com/donnie4w/Tim-Practical-Article)
 
 ## 系统消息：
 

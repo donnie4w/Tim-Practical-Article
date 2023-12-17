@@ -1,5 +1,5 @@
 > tim通过TimPresence协议进行用户在线信息通信，主要定义数字属性字段，可以用于用户在线状态信息的通讯。
->[ 来源《tim实践系列——如何使用TimPresence自定义各种用户状态》](https://tlnet.top/article/22425172)
+> 来源[《tim实践系列》](https://github.com/donnie4w/Tim-Practical-Article)
 
 ### TimPresence的字段：
 
