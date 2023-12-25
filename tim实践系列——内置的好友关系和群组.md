@@ -49,7 +49,7 @@
 
 用户业务接口的调用与示例在[tim文档](https://tlnet.top/timdoc)中有详细说明：
 
-![](/img/bVdaSVV)
+![](https://tlnet.top/f/1702868272_9897.jpg)
 
 
 ----------
