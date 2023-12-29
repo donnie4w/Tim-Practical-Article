@@ -10,13 +10,10 @@
  
 ![图片](https://tlnet.top/f/1703839727_20027.jpg)
  
-![图片](https://tlnet.top/f/1703839757_442.jpg)
 
 #### 2. 在webtim：https://tim.tlnet.top 中实现实时文件传输 功能：
 
 ![图片](https://tlnet.top/f/1703840191_18609.jpg)
- 
-![图片](https://tlnet.top/f/1703840201_31151.jpg)
  
 ![图片](https://tlnet.top/f/1703840210_20697.jpg)
 
@@ -46,13 +43,14 @@
 5. 虚拟房间取消订阅
 6. 虚拟房间发送流数据
 
-    以下是tim的java客户端atim的虚拟房间demo程序片段： tc.VirtualroomRegister(); //注册虚拟房间
-    tc.VirtualroomRemove("NGhMpCbk2wQ"); //移除虚拟房间，该方法一般无需调用，虚拟房间无数据流后会自动注销
-    tc.VirtualroomAddAuth("NGhMpCbk2wQ","100001"); //虚拟房间创建人给其他账号添加向虚拟房间推送流数据的权限
-    tc.VirtualroomDelAuth("NGhMpCbk2wQ","100001"); //移除推送流数据的权限
-    tc.VirtualroomSub("NGhMpCbk2wQ"); //订阅虚拟房间
-    tc.VirtualroomSubCancel("NGhMpCbk2wQ"); //取消订阅虚拟房间
-    tc.PushStream("NGhMpCbk2wQ",new byte[]{1,2,3,4}, (byte) 0); //推送流数据
+        以下是tim的java客户端atim的虚拟房间demo程序片段：
+        tc.VirtualroomRegister(); //注册虚拟房间
+        tc.VirtualroomRemove("NGhMpCbk2wQ"); //移除虚拟房间，该方法一般无需调用，虚拟房间无数据流后会自动注销
+        tc.VirtualroomAddAuth("NGhMpCbk2wQ","100001"); //虚拟房间创建人给其他账号添加向虚拟房间推送流数据的权限
+        tc.VirtualroomDelAuth("NGhMpCbk2wQ","100001"); //移除推送流数据的权限
+        tc.VirtualroomSub("NGhMpCbk2wQ"); //订阅虚拟房间
+        tc.VirtualroomSubCancel("NGhMpCbk2wQ"); //取消订阅虚拟房间
+        tc.PushStream("NGhMpCbk2wQ",new byte[]{1,2,3,4}, (byte) 0); //推送流数据
 
 ### 接口说明：
 
